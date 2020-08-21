@@ -25,10 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   app = new App({
-    target: document.body,
-    props: {
-      name: 'rainbowmaker'
-    }
+    target: document.body
   });
 });
 

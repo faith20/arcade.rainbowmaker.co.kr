@@ -1,8 +1,7 @@
 <script>
-  import Header from "./Header.svelte";
+  // import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
-
-  export let name;
+  import Card from "./Card.svelte";
 </script>
 
 <style>
@@ -21,13 +20,6 @@
     margin: 0 auto;
   }
 
-  h1 {
-    color: #eee;
-    /* text-transform: uppercase; */
-    font-size: 4em;
-    font-weight: 100;
-  }
-
   @media (min-width: 640px) {
     main {
       max-width: none;
@@ -35,9 +27,7 @@
   }
 </style>
 
-<Header />
 <main>
-  <h1>Hello {name}!</h1>
-  <p>Welcome.</p>
+  <Card />
 </main>
 <Footer />
