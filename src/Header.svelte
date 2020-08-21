@@ -17,6 +17,6 @@
 
 <header>
   <h1>
-    <img src="./img/rainbowmakerlogo.png" alt="rainbowmaker logo" />
+    <img src="./img/rainbowmaker_logo_tr.png" alt="rainbowmaker logo" />
   </h1>
 </header>
