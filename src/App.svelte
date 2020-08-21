@@ -1,7 +1,7 @@
 <script>
-  // import Header from "./Header.svelte";
+  import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
-  import Card from "./Card.svelte";
+  import Card from "./Card1.svelte";
 </script>
 
 <style>
@@ -12,7 +12,19 @@
     background-size: cover;
   }
 
-  main {
+  .center {
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-around;
+    /* align-content: space-around; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* width: 80%; */
+    /* height: 100%; */
+    pointer-events: none;
+  }
+
+  /* main {
     color: #eee;
     text-align: center;
     padding: 1em;
@@ -24,10 +36,14 @@
     main {
       max-width: none;
     }
-  }
+  } */
 </style>
 
-<main>
+<Header />
+<div class="center">
   <Card />
-</main>
+  <Card />
+  <Card />
+  <Card />
+</div>
 <Footer />

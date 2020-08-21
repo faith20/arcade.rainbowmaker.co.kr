@@ -1,12 +1,14 @@
 <style>
   footer {
-    background: white;
+    /* background: white; */
     padding: 20px;
     text-align: center;
+    /* margin-top: 20px; */
   }
 
   .copyright {
-    color: #aaa;
+    /* color: #aaa; */
+    color: white;
     font-size: 14px;
     display: inline-block;
     padding: 10px;
