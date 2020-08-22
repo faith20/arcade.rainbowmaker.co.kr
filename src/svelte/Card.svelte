@@ -52,6 +52,7 @@
 
   button {
     border: none;
+    background: transparent;
   }
 
   .button_group {

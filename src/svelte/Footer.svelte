@@ -3,6 +3,7 @@
     /* background: white; */
     padding: 20px;
     text-align: center;
+    text-shadow: 1px 1px 2px #835300;
     /* margin-top: 20px; */
   }
 

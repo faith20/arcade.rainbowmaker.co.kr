@@ -3,6 +3,7 @@
     /* background: #f7f7f7; */
     /* background: white; */
     padding: 20px 0 0 0;
+    text-shadow: 1px 1px 2px #835300;
   }
 
   h1 {
