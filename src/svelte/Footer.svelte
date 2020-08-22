@@ -11,20 +11,20 @@
     color: white;
     font-size: 14px;
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
     border-top: 1px solid #ddd;
   }
 
-  img {
+  /* img {
     position: relative;
     top: 10px;
     max-width: 150px;
-  }
+  } */
 </style>
 
 <footer>
   <div class="copyright">
-    Copyright 2020
-    <img src="./img/rainbowmaker_logo_tr.png" alt="rainbowmaker" />
+    Copyright ⓒ 2020. All Rights Reserved.
+    <!-- <img src="./img/rainbowmaker_logo_tr.png" alt="rainbowmaker" /> -->
   </div>
 </footer>

@@ -12,16 +12,14 @@
     background-size: cover;
   }
 
-  .center {
+  .container {
     /* position: absolute; */
     display: flex;
-    justify-content: space-around;
-    /* align-content: space-around; */
-    align-items: flex-start;
-    flex-wrap: wrap;
-    /* width: 80%; */
-    /* height: 100%; */
-    pointer-events: none;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
   }
 
   /* main {
@@ -40,7 +38,7 @@
 </style>
 
 <Header />
-<div class="center">
+<div class="container">
   <Card />
   <Card />
   <Card />

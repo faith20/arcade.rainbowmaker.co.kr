@@ -1,7 +1,14 @@
 <script>
   export let imageFile = "./img/card.png";
+  // export let imageFile = "./img/rainbowmaker_logo_tr.png";
 
-  const handleButton = () => {};
+  const handleButtonAppStore = () => {
+    console.log("Button AppStore");
+  };
+
+  const handleButtonPlayStore = () => {
+    console.log("Button PlayStore");
+  };
 </script>
 
 <style>
@@ -15,18 +22,17 @@
     transition: 0.3s;
     /* width: 80%; */
     /* height: 80%; */
-    max-width: 300px;
+    max-width: 240px;
     /* max-height: 80%; */
     border-radius: 5px;
     margin-top: 30px;
   }
 
-  .container {
-    padding: 2px 60px;
+  .content {
     font-size: 1rem;
     text-align: center;
     color: black;
-    pointer-events: auto;
+    padding: 2px 10%;
     /* margin: auto; */
   }
 
@@ -66,70 +72,21 @@
     }
   }
 
-  /* button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
-} */
-
-  button:disabled {
-    color: #999;
-  }
-
-  button:not(:disabled):active {
-    background-color: #ddd;
-  }
-
-  button:focus {
-    /* border-color: #666; */
-    outline: 0;
-  }
-
-  .button {
+  button {
     border: none;
-    /* background-color: #50ee7a; */
-    background-color: #ffa100;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
-    /* box-shadow: 5px 5px 10px #aeaeb3, -5px -5px 10px #ffffff; */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    padding: 5px 0px 0px 0px;
-  }
-
-  .button.neutral {
-    /* background-color: #2dabf9; */
-    background-color: white;
-    border: 3px solid #2dabf9;
-    color: #2dabf9;
-  }
-
-  .button.negative {
-    /* background-color: #d0451b; */
-    background-color: white;
-    border: 3px solid #d0451b;
-    color: #d0451b;
-  }
-
-  .button:active {
-    /* box-shadow: inset 5px 5px 10px #aeaeb3, inset -5px -5px 10px #ffffff; */
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12),
-      inset 0 -1px -2px rgba(0, 0, 0, 0.24);
   }
 
   .button_group {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 1em;
   }
 </style>
 
 <div class="card">
   <img src={imageFile} alt="Game" style="width:100%" />
-  <div class="container">
+  <div class="content">
     <h2>Acrade Flip Match</h2>
     <h1>Simple Card Flip Match Game</h1>
     <ul>
@@ -137,13 +94,16 @@
       <li>Get high scores.</li>
       <li>Try with various card packs.</li>
     </ul>
-    <div class="button_group">
-      <button class="button" on:click={handleButton} style="width:45%">
-        Google Play
-      </button>
-      <button class="button" on:click={handleButton} style="width:45%">
-        App Store
-      </button>
-    </div>
+  </div>
+  <div class="button_group">
+    <button on:click={handleButtonAppStore}>
+      <img src="./img/app-store-badge.png" alt="AppStore" style="width:100%" />
+    </button>
+    <button on:click={handleButtonPlayStore}>
+      <img
+        src="./img/google-play-badge.png"
+        alt="GooglePlay"
+        style="width:100%" />
+    </button>
   </div>
 </div>
