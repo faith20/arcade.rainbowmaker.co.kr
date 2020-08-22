@@ -23,7 +23,7 @@
     background: #f8f8ff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    max-width: 240px;
+    max-width: 300px;
     border-radius: 5px;
     margin-top: 30px;
   }
@@ -57,7 +57,7 @@
 
   .button_group {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 0 1em;
   }

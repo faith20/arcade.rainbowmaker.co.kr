@@ -34,6 +34,11 @@
     margin: 0 0 16px;
   }
 
+  ul {
+    width: 70%;
+    margin: auto;
+  }
+
   li {
     line-height: 140%;
     margin: 10px 0;
@@ -46,7 +51,7 @@
 <Header />
 <div class="container">
   <Card
-    imageFile="./img/card.png"
+    imageFile="./img/flipmatch-screenshot.png"
     appStoreLink="https://apps.apple.com/us/app/id1524614915"
     playStoreLink="http://play.google.com/store/apps/details?id=kr.co.rainbowmaker.arcade.flipmatch">
     <h2>Acrade Flip Match</h2>
