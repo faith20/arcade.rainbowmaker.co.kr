@@ -1,13 +1,17 @@
 <script>
-  export let imageFile = "./img/card.png";
-  // export let imageFile = "./img/rainbowmaker_logo_tr.png";
+  // export let imageFile = "./img/card.png";
+  export let imageFile = "./img/rainbowmaker_logo_tr.png";
+  export let appStoreLink = null;
+  export let playStoreLink = null;
 
   const handleButtonAppStore = () => {
-    console.log("Button AppStore");
+    // location.href = "https://arcade.rainbowmaker.co.kr";
+
+    if (appStoreLink) window.open(appStoreLink);
   };
 
   const handleButtonPlayStore = () => {
-    console.log("Button PlayStore");
+    if (playStoreLink) window.open(playStoreLink);
   };
 </script>
 
@@ -15,15 +19,11 @@
   .card {
     display: flex;
     justify-content: space-between;
-    /* align-items: stretch; */
     flex-direction: column;
     background: #f8f8ff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    /* width: 80%; */
-    /* height: 80%; */
     max-width: 240px;
-    /* max-height: 80%; */
     border-radius: 5px;
     margin-top: 30px;
   }
@@ -33,29 +33,6 @@
     text-align: center;
     color: black;
     padding: 2px 10%;
-    /* margin: auto; */
-  }
-
-  h2 {
-    color: #ffa100;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin: 10px 0 8px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.8);
-    margin: 0 0 16px;
-  }
-
-  li {
-    line-height: 140%;
-    margin: 10px 0;
-    text-align: left;
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.8);
   }
 
   /* .card:hover {
@@ -64,6 +41,7 @@
 
   img {
     border-radius: 5px 5px 0 0;
+    width: 100%;
   }
 
   @media (min-width: 600px) {
@@ -87,23 +65,14 @@
 <div class="card">
   <img src={imageFile} alt="Game" style="width:100%" />
   <div class="content">
-    <h2>Acrade Flip Match</h2>
-    <h1>Simple Card Flip Match Game</h1>
-    <ul>
-      <li>Pick cards with same images.</li>
-      <li>Get high scores.</li>
-      <li>Try with various card packs.</li>
-    </ul>
+    <slot />
   </div>
   <div class="button_group">
     <button on:click={handleButtonAppStore}>
-      <img src="./img/app-store-badge.png" alt="AppStore" style="width:100%" />
+      <img src="./img/app-store-badge.png" alt="AppStore" />
     </button>
     <button on:click={handleButtonPlayStore}>
-      <img
-        src="./img/google-play-badge.png"
-        alt="GooglePlay"
-        style="width:100%" />
+      <img src="./img/google-play-badge.png" alt="GooglePlay" />
     </button>
   </div>
 </div>

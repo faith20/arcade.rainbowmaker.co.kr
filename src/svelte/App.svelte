@@ -13,35 +13,49 @@
   }
 
   .container {
-    /* position: absolute; */
     display: flex;
     justify-content: center;
     /* align-content: center; */
     align-items: center;
-    /* flex-wrap: wrap; */
     flex-direction: column;
   }
 
-  /* main {
-    color: #eee;
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
+  h2 {
+    color: #ffa100;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0 8px;
   }
 
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
-  } */
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0 0 16px;
+  }
+
+  li {
+    line-height: 140%;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+  }
 </style>
 
 <Header />
 <div class="container">
-  <Card />
-  <Card />
-  <Card />
-  <Card />
+  <Card
+    imageFile="./img/card.png"
+    appStoreLink="https://arcade.rainbowmaker.co.kr"
+    playStoreLink="https://arcade.rainbowmaker.co.kr">
+    <h2>Acrade Flip Match</h2>
+    <h1>Simple Card Flip Match Game</h1>
+    <ul>
+      <li>Pick cards with same images.</li>
+      <li>Get high scores.</li>
+      <li>Try with various card packs.</li>
+    </ul>
+  </Card>
 </div>
 <Footer />
