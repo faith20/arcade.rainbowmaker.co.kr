@@ -1,7 +1,7 @@
 <script>
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
-  import Card from "./Card1.svelte";
+  import Card from "./Card.svelte";
 </script>
 
 <style>

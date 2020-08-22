@@ -5,7 +5,8 @@
     padding: 20px;
   }
 
-  h1 {
+  h1,
+  h2 {
     margin: 0;
     text-align: center;
     color: #eee;
@@ -13,5 +14,6 @@
 </style>
 
 <header>
-  <h1>Games</h1>
+  <h2>rainbowmaker</h2>
+  <h1>Arcade Games</h1>
 </header>
