@@ -47,8 +47,8 @@
 <div class="container">
   <Card
     imageFile="./img/card.png"
-    appStoreLink="https://arcade.rainbowmaker.co.kr"
-    playStoreLink="https://arcade.rainbowmaker.co.kr">
+    appStoreLink="https://apps.apple.com/us/app/id1524614915"
+    playStoreLink="http://play.google.com/store/apps/details?id=kr.co.rainbowmaker.arcade.flipmatch">
     <h2>Acrade Flip Match</h2>
     <h1>Simple Card Flip Match Game</h1>
     <ul>
