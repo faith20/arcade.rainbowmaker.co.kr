@@ -1,3 +1,7 @@
+<script>
+  import Email20 from "carbon-icons-svelte/lib/Email24";
+</script>
+
 <style>
   footer {
     /* background: white; */
@@ -12,8 +16,12 @@
     color: white;
     font-size: 14px;
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     border-top: 1px solid #ddd;
+  }
+
+  a {
+    color: white;
   }
 
   /* img {
@@ -25,6 +33,11 @@
 
 <footer>
   <div class="copyright">
+    <div>
+      <a href="mailto:contact@rainbowmaker.co.kr">
+        <Email20 />
+      </a>
+    </div>
     Copyright ⓒ 2020. All Rights Reserved.
     <!-- <img src="./img/rainbowmaker_logo_tr.png" alt="rainbowmaker" /> -->
   </div>
