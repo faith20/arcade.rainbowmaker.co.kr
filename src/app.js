@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
       (feature) => typeof firebaseApp[feature] === 'function'
     );
     console.log(`Firebase SDK loaded with ${features.join(', ')}`);
+
+    firebase.analytics();
   } catch (e) {
     console.error(e);
     console.log('Error loading the Firebase SDK, check the console.');
