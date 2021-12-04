@@ -1,5 +1,5 @@
 {
-  "name": "arcade.rainbowmaker.cok.r",
+  "name": "arcade.rainbowmaker.co.kr",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
