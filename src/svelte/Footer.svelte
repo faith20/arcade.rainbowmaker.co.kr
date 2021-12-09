@@ -1,6 +1,18 @@
 <script>
-  import Email20 from "carbon-icons-svelte/lib/Email24";
+  import Email24 from 'carbon-icons-svelte/lib/Email24';
 </script>
+
+<footer>
+  <div class="copyright">
+    <div>
+      <a href="mailto:contact@rainbowmaker.co.kr">
+        <Email24 />
+      </a>
+    </div>
+    Copyright ⓒ 2020. All Rights Reserved.
+    <!-- <img src="./img/rainbowmaker_logo_tr.png" alt="rainbowmaker" /> -->
+  </div>
+</footer>
 
 <style>
   footer {
@@ -30,15 +42,3 @@
     max-width: 150px;
   } */
 </style>
-
-<footer>
-  <div class="copyright">
-    <div>
-      <a href="mailto:contact@rainbowmaker.co.kr">
-        <Email20 />
-      </a>
-    </div>
-    Copyright ⓒ 2020. All Rights Reserved.
-    <!-- <img src="./img/rainbowmaker_logo_tr.png" alt="rainbowmaker" /> -->
-  </div>
-</footer>
